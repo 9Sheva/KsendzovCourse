@@ -1,0 +1,11 @@
+0.ID
+1.Summary(Заголовок);
+2.Description (описание);
+3.Actual/expected result (фактический/ожидаемый результат);
+4.Steps to reproduse (Шаги для воспроизведения);
+5.Priority (приоритет);
+6.Severity (серьёзность);
+7.Attachments (вложения);
+8.Status (статус);
+9.Environment (Окружение).
+10.Requiroment (Требование).
