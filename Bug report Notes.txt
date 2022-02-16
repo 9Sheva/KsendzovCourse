@@ -1,0 +1,240 @@
+Тестовое задание. Kirill Shevchenko (she8ker@mail.ru)
+Символом # я буду обозначать комментарий, если посчитаю,что его будет лучше оставить, чтобы мою мысль правильно поняли.
+Вместо ID я использовал обозначение Project
+
+1. Author: Kirill Shevchenko.
+   Project: "Notes".
+   Version: null
+   Environment: Samsung Galaxy s10+ (Android 11).
+   Discription: It is impossible to change the title of the created note, while the note is opend.
+   Steps to reproduce: Tap the "New Note" button. Then, when a new note opens, tap on the field with its ittle, which is originally "New note". After tapping on the field, 
+   nothing happens.
+   Result: after tapping on the field with title of the note, nothing happens.
+   Expected result: After tapping on the field with title of the note, a window appears in which you can change the title and save it
+   Severity:Minor
+   Priority:Medium
+   Requirement: B6   
+
+2. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy s10+ (Android 11).
+   Discription: The name of the note can be saved in an empty form.
+   Steps to reproduce: Open a previously created note. tap the 'Edit title' button. In the window that appears, leave the field with the name of the note not filled in. Tap
+   the "OK" button.
+   Result: The note is saved with an empty field in the name.
+   Expected result: A window appears with the text " Cannot be saved without a name ".
+   Attachment:###
+   Severity: trivial
+   Priority: low
+   Requirement: I0
+
+3. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription :After tapping on the "Save" button, the note closes and goes to the main menu.
+   Steps to reproduce: Open a previously created note, or create the new one, then open it and write down any symbols. Then tap the "Save" button.
+   Result: After tapping on the "Save" button, the changes are saved, but the note closes and goes to the main menu.
+   Expected Result: After tapping on the "Save" button, the changes are saved, but the note is note closed, so the user can continue working with the note.
+   Attachment:###
+   Severity: minor
+   Priority: low
+   Requirement:  A5
+
+4. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription: The first line of the window that appears after a longtap on the note in the main menu has a font size and color that does not correspond to the other lines of the window.
+   Steps to reproduce: in the main menu use the longtap on the previously createrd note. After the longtap apears a window with 5 lines ( 4 of them are clickable ). 
+   Result: After the longtap apears a window with 5 lines ( 4 of them are clickable ). The first line has a font size and colour that does not correspond to the other lines of the window.
+   Expected result: The first line of the window that appears after a long tap on the note in the main menu has the font size and color corresponding to the other lines of the window.
+   Attachment: ###
+   Severity: trivial
+   Priority: low
+   Requirement: Y6
+# Ошибка в дизайне. Первая строка всплывающего после длительного нажатия окна визуально плохо рассмотрима, выпадает из структуры дизайна строк в всплывающем окне. Также, данная строка 
+в принципе не несёт какой-либо информативности, т.к. она не кликабельна и лишь повторяет название заметки, в чем нету никакого смысла, однако если это может быть прописано в требованиях, я
+не выношу это как баг.
+
+
+5. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription:In the window that appears after a long tap there is a button "Edit title", when you click on it, an application error occurs.
+   Steps to reproduse: In the main menu use the long tap on the previously created note. After the long tap appears a window with 4 buttons, one of wich is "Edit title" button. Tap on this 
+   button.
+   Result: Afrter tapping on "Edit title" button, an application error occurs.
+   Expected result: After tapping "Edit title" button the window appears with a line where you can enter a new title for the note and save it.
+   Attachment:###
+   Severity: critical
+   Priority: high
+   Requirement: J 1
+
+6. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription: When you tap on the "Delete" button in an open note, the note closes and exits to the main menu. At the same time, neither the note nor any information is deleted from the note.
+   Steps to reproduce: Open a previously created note, or create the new one, then open it and write down any symbols. Then tap on the "Delete" button.
+   Result: After tapping on "Delete" button, the note closes and exits to the main menu. At the same time, neither the note nor any information is deleted from the note.
+   Expected result: After tapping on "Delete" button, a window appears in which it is specified whether the user really wants to delete the note. There are 2 buttons in the window
+   ( "Yes" and "No"). When you click on the " Yes " button, the note is deleted and you exit to the main menu. When you click on the " No " button, the window with the clarifying 
+   question closes.
+   Attachment:###
+   Severity: Major
+   Priority: Medium
+   Requirement: Y6
+
+
+
+7. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription: When you tap on the "Copy" button that appears in the longtap window, and then click on the "paste" button, an empty note is created without a title.
+   Steps to reproduse:  longtap on any note that has a title and some text. In the window that appears, tap the "Copy" button. Then, tap the "Paste" button.
+   Result: After tappingon the "paste" button, a new note is created, which opens automatically. The note does not have any text and does not have a title.
+   Expected result: After tapping on the "paste" button, a copy of the note that the user selected is created. The note has the same title and text as the one that the user copied.
+   Attachment:###
+   Severity: Major
+   Priority: Medium
+   Requirement: U9
+
+
+
+8. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription: When you open a previously created note, the "Edit" button appears next to the title, when you tap on it, nothing happens.
+   Steps to reproduse: Open a previously created note. The "Edit" button appears to the left of its title. Click on this button.
+   Result: when you tap the "Edit" button, there is a visual effect of tapping. Nothing else happens.
+   Expected result: When you tap the "Edit button", a window appears in which you can change the title of the note and save it.
+   Attachment:###
+   Severity: Minor
+   Priority: Medium
+   Requirement: I3
+
+
+
+9. Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription: When creating a new note, there is no function to change the title.
+   Steps to reproduce: Create a new note, then tap on the title, wich is automatically named as "New note".
+   Result: There is a visual tap effect. Nothing else happens.
+   Expected result: When you click on the title in a new note, a window appears in which you can change the title and save it.
+   Attachment:###
+   Severity: Major
+   Priority: Medium
+   Requirement: H7
+
+
+
+10.Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription: When you turn the mobile phone and switch the screen to landscape mode, while writing the text in the note, the blue line markup disappear.
+   Steps toreproduse: Create the new note and write down any text. Then Turn the mobile phone and switch the screen to the landscape mode.Keep writing dowm any text. 
+   Result: After switching the screen to landscape mode, the blue line markup disappears.
+   Expected rresult: After switching the screen to landscape mode, while writing the text in the note, the blue line markup adjusts the format to the landscape mode.
+   Attachment:###
+   Severity: Trivial
+   Priority: Low
+   Requirement: U8
+
+ 
+11.Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription: After changing the note title, there is no way to revert changes.
+   Steps to reproduse: Open a previously created note. Then edit the title of this note. Then pres button "Другие параметры".
+   Result: After clicking on the "Другие параметры" button, the button "Revert changes" does not appear in the window.
+   Expected result: After tapping on the "Другие параметры" button, the "revert changes" button appears in the window. After tapping on this button, the changes in the title are canceled.
+   Attachment:###
+   Severity: Minor
+   Priority: Medium
+   Requirement: K9
+
+12.Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment: Samsung Galaxy S10+ (Android 11).
+   Discription:During the re-installation, the application requests permission to install the update. After installing the update, the application version does not change.
+   Steps to reproduse: Open the installer file. In the window that appears with the question about installing the update, tap "Установить". Next, find the application in the 
+   main menu of the smartphone and view its "Информация о приложении".
+   Result: After the update is installed, the application version does not change.
+   Expected result:After the update installed, the application version change from "null" to a different one.
+   Attachment:###
+   Severity: Trivial
+   Priority: Low
+   Requirement: M1
+
+
+13.Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment:Samsung Galaxy S10+ (Android 11).
+   Discription:When you change the screen resolution of your smartphone from 1520x720 to 3040x1440, the note closes and goes to the main menu.
+   Steps to reproduce: Open the note, collapse the application. Then change the screen resolution of your smartphone from 1520x720 to 3040x1440 and open the aplication.
+   Result: The note is closed.
+   Expected result: The note should be opened.
+   Attachment:###
+   Severity: Trivial
+   Priority: Low
+   Requirement: I1
+
+
+14.Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment:Samsung Galaxy S10+ (Android 11).
+   Discription: "The" hot keys " in the open note are indicated by different languages.
+   Steps to reproduse: open a previously created note. Then check it hot kyes (3 hot keys at all).
+   Result: The first hot key is named "Save", the second hot key is named "Delete", the third hot key is named "другие параметры".
+   Expected result: All hot keys must be indicated by one language (English).
+   Attachment: @@@
+   Severity: Minor
+   Priority: Medium
+   Requirement: J5
+
+
+15.Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment:Samsung Galaxy S10+ (Android 11).
+   Discription: "The" hot keys " in the main menu are indicated by different languages.
+   Steps to reproduse: Open an amplication. There are 2 hotkeys in the main menu. Check them out.
+   Result: The first hot key is named "new note", the second hot key is named "другие параметры".
+   Expected result: All hot keys in the main menu must be indicated by one language (English).
+   Severity: Minor
+   Priority: Medium
+   Requirement:H2
+
+
+16.Author: Kirill Shevchenko.
+   Project: 'Notes'.
+   Version: null
+   Environment:Samsung Galaxy S10+ (Android 11).
+   Discription: When you tap on the "Notes" button in the main menu of the application, nothing happens.
+   Steps to reproduse: Open the aplication. In the main menu tap "Notes" button.
+   Result: a visual tap effect occurs.
+   Expected result: After the tap something should happened
+   # Что-то должно произойти, т.к. если имеется кнопка и визульный эффект, при её нажатии, то она для чего-то предназначена. Однако задумку разработчика я назвать не могу
+   Severity: Minor
+   Priority: Medium
+   Requirement:H1
+
+
+
+
+
+
+
+
