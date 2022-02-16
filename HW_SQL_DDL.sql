@@ -1,4 +1,5 @@
---Создать таблицу employees
+в„– РќРёР¶Рµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРѕ РІС‹РїРѕР»РЅРµРЅРЅРѕРµ Р·Р°РґР°РЅРёРµ РїРѕ СЂР°Р±РѕС‚Рµ СЃ SQL СЃ РїРѕРјРѕС‰СЊСЋ Postgres
+--Г‘Г®Г§Г¤Г ГІГј ГІГ ГЎГ«ГЁГ¶Гі employees
 
 
 create table employees(
@@ -6,24 +7,24 @@ id serial primary key,
 employee_name Varchar(50) not null
 )
 
---Наполнить таблицу employee 70 строками.
+--ГЌГ ГЇГ®Г«Г­ГЁГІГј ГІГ ГЎГ«ГЁГ¶Гі employee 70 Г±ГІГ°Г®ГЄГ Г¬ГЁ.
 
 insert into employees(id, employee_name)
 values (70, 'Illya');
 
---Создать таблицу salary
+--Г‘Г®Г§Г¤Г ГІГј ГІГ ГЎГ«ГЁГ¶Гі salary
 
 create table salary (
  id serial  primary key,
  monthly_salary Int not null
 )
 
---Наполнить таблицу salary 15 строками:
+--ГЌГ ГЇГ®Г«Г­ГЁГІГј ГІГ ГЎГ«ГЁГ¶Гі salary 15 Г±ГІГ°Г®ГЄГ Г¬ГЁ:
 
 insert into salary (id,monthly_salary)
 values(15,2400)
 
---Создать таблицу employee_salary
+--Г‘Г®Г§Г¤Г ГІГј ГІГ ГЎГ«ГЁГ¶Гі employee_salary
 
 create table employee_salary(
 id serial  primary key,
@@ -31,33 +32,33 @@ employee_id Int not null unique,
 salary_id Int not null
 )
 
---Наполнить таблицу employee_salary 40 строками:
--- в 10 строк из 40 вставить несуществующие employee_id:
+--ГЌГ ГЇГ®Г«Г­ГЁГІГј ГІГ ГЎГ«ГЁГ¶Гі employee_salary 40 Г±ГІГ°Г®ГЄГ Г¬ГЁ:
+-- Гў 10 Г±ГІГ°Г®ГЄ ГЁГ§ 40 ГўГ±ГІГ ГўГЁГІГј Г­ГҐГ±ГіГ№ГҐГ±ГІГўГіГѕГ№ГЁГҐ employee_id:
 
 insert into employee_salary(id, employee_id, salary_id)
 values (40,81,6)
 
---Создать таблицу roles_2
+--Г‘Г®Г§Г¤Г ГІГј ГІГ ГЎГ«ГЁГ¶Гі roles_2
 
 create table roles_2(
 id Serial  primary key,
 role_name int not null unique
 )
 
---Поменять тип столба role_name с int на varchar(30)
+--ГЏГ®Г¬ГҐГ­ГїГІГј ГІГЁГЇ Г±ГІГ®Г«ГЎГ  role_name Г± int Г­Г  varchar(30)
 
 alter table roles_2
 alter column role_name type varchar(30)
 
---Наполнить таблицу roles 20 строками:
+--ГЌГ ГЇГ®Г«Г­ГЁГІГј ГІГ ГЎГ«ГЁГ¶Гі roles 20 Г±ГІГ°Г®ГЄГ Г¬ГЁ:
 
 insert into roles_2(id,role_name)
 values (20,'Senior Automation QA engineer')
 
---Создать таблицу roles_employee
+--Г‘Г®Г§Г¤Г ГІГј ГІГ ГЎГ«ГЁГ¶Гі roles_employee
 --id. Serial  primary key,
---employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
---role_id. Int, not null (внешний ключ для таблицы roles, поле id)
+--employee_id. Int, not null, unique (ГўГ­ГҐГёГ­ГЁГ© ГЄГ«ГѕГ· Г¤Г«Гї ГІГ ГЎГ«ГЁГ¶Г» employees, ГЇГ®Г«ГҐ id)
+--role_id. Int, not null (ГўГ­ГҐГёГ­ГЁГ© ГЄГ«ГѕГ· Г¤Г«Гї ГІГ ГЎГ«ГЁГ¶Г» roles, ГЇГ®Г«ГҐ id)
 
 
 create table roles_employee_1(
@@ -70,7 +71,7 @@ foreign key (role_id)
 	references roles_2(id)
 	);
 
---Наполнить таблицу roles_employee 40 строками:
+--ГЌГ ГЇГ®Г«Г­ГЁГІГј ГІГ ГЎГ«ГЁГ¶Гі roles_employee 40 Г±ГІГ°Г®ГЄГ Г¬ГЁ:
 
 insert into roles_employee_1 (employee_id, role_id)
 values (1,1),
